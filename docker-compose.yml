@@ -20,5 +20,14 @@ services:
       - NODE_MAX_INSTANCES=3
       - NODE_MAX_SESSION=3
 
-
-
+  # firefox:
+  #   image: selenium/node-firefox:3.141.59-20210929
+  #   volumes:
+  #     - /dev/shm:/dev/shm
+  #   depends_on:
+  #     - selenium-hub
+  #   environment:
+  #     - HUB_HOST=selenium-hub
+  #     - HUB_PORT=4444
+  #     - NODE_MAX_INSTANCES=3
+  #     - NODE_MAX_SESSION=3
